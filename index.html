@@ -3,165 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saurabh Varma Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <title>Dr. Desie Singh | Expert NEET UG Counselling Guidance | AIIMS Delhi</title>
+    <meta name="description" content="Get expert guidance for NEET UG counselling from Dr. Desie Singh, an AIIMS Delhi alumnus. In-depth information on choice filling, college selection, and securing your MBBS seat.">
+    <meta name="keywords" content="NEET UG Counselling, Dr. Desie Singh, AIIMS Delhi, NEET Guidance, MBBS Admission, Medical College Counselling, NEET Rank, Choice Filling">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    
     <style>
+        /* --- General Styling & Variables --- */
+        :root {
+            --primary-color: #005A9C; /* Professional Blue */
+            --secondary-color: #00A3E0; /* Lighter Blue */
+            --dark-color: #2c3e50; /* Dark Grey/Blue for text */
+            --light-color: #f4f4f4; /* Light grey for background */
+            --white-color: #ffffff;
+        }
+
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Lato', sans-serif;
             margin: 0;
             padding: 0;
-            scroll-behavior: smooth;
-            background-color: #f4f4f4;
-            color: #333;
+            line-height: 1.6;
+            background-color: var(--light-color);
+            color: var(--dark-color);
         }
-        header {
-            background: #1a73e8;
-            color: #fff;
-            padding: 50px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.8em;
-        }
-        header p {
-            font-size: 1.2em;
-        }
-        section {
-            padding: 60px 20px;
+
+        .container {
             max-width: 1000px;
             margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
         }
+
+        /* --- Header & Navigation --- */
+        header {
+            background: var(--primary-color);
+            color: var(--white-color);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 900;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        /* --- Sections --- */
+        section {
+            padding: 40px 20px;
+            margin: 20px 0;
+            background: var(--white-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
         h2 {
             text-align: center;
-            margin-bottom: 40px;
-            color: #1a73e8;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 700;
         }
-        .about, .experience, .resume, .contact {
-            background: #fff;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            margin-bottom: 40px;
+
+        /* --- About Me Section --- */
+        #about-me .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px auto;
+            border: 5px solid var(--secondary-color);
         }
-        .chart-container {
-            width: 100%;
-            max-width: 700px;
-            margin: auto;
+
+        #about-me p {
+            text-align: center;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
         }
-        .skills-list, .ecomm-list {
-            list-style-type: square;
-            padding-left: 20px;
+
+        /* --- Guidance Section Bullet Points --- */
+        #guidance ul {
+            list-style: none;
+            padding: 0;
         }
-        a.button {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #1a73e8;
-            color: #fff;
+
+        #guidance li {
+            background-color: #eef7ff;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-left: 5px solid var(--secondary-color);
             border-radius: 5px;
-            text-decoration: none;
-            margin-top: 20px;
+            font-size: 1.1rem;
+            transition: transform 0.2s ease-in-out;
         }
+        
+        #guidance li:hover {
+            transform: scale(1.02);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        #guidance li strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        /* --- Social Media Section --- */
+        #social {
+            text-align: center;
+        }
+        .social-links a {
+            color: var(--white-color);
+            background-color: var(--primary-color);
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+        .social-links a:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* --- Footer --- */
         footer {
-            background: #333;
-            color: #fff;
             text-align: center;
             padding: 20px;
+            margin-top: 30px;
+            background: var(--dark-color);
+            color: var(--white-color);
         }
     </style>
 </head>
 <body>
 
-<!-- Header / Hero -->
-<header>
-    <h1>Saurabh Varma</h1>
-    <p>SSC & Govt Job Aspirant | E-commerce Expert</p>
-    <a href="#resume" class="button">View Resume</a>
-</header>
+    <header>
+        <div class="container">
+            <h1>Dr. Desie Singh</h1>
+            <p>Your Trusted Guide for NEET UG Counselling | UG from AIIMS, New Delhi</p>
+        </div>
+    </header>
 
-<!-- About Me -->
-<section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Hi! I am Saurabh Varma, a dedicated SSC & Government job aspirant with strong experience in e-commerce management. Skilled in Amazon & Flipkart seller account handling, SEO optimization, and strategic project execution. I have cleared multiple government exams and continue to pursue excellence in competitive fields.</p>
-</section>
+    <div class="container">
+        <section id="about-me">
+            <img src="https://via.placeholder.com/150" alt="Dr. Desie Singh" class="profile-img">
+            <h2>About Me</h2>
+            <p>
+                Welcome, future doctors! I'm <strong>Dr. Desie Singh</strong>, a proud alumnus of the prestigious <strong>All India Institute of Medical Sciences (AIIMS), New Delhi</strong>. Having navigated the intense competition and complex counselling process of NEET UG myself, I understand the challenges and anxieties you face. My mission is to simplify this crucial phase of your journey, providing clear, strategic, and personalized guidance to help you secure a seat in your dream medical college.
+            </p>
+        </section>
 
-<!-- SSC / Govt Exam Section -->
-<section id="ssc" class="experience">
-    <h2>SSC & Govt Exam Performance</h2>
-    <div class="chart-container">
-        <canvas id="examChart"></canvas>
+        <section id="guidance">
+            <h2>NEET UG Counselling: A Step-by-Step Guide</h2>
+            <ul>
+                <li>
+                    <strong>Understanding the Counselling Process</strong>
+                    Get familiar with the key players: the Medical Counselling Committee (MCC) for All India Quota (AIQ) and the respective state authorities for the State Quota. Understand the different rounds (Round 1, Round 2, Mop-Up, etc.) and their rules.
+                </li>
+                <li>
+                    <strong>Essential Document Checklist</strong>
+                    Keep your documents ready and verified. This includes your NEET admit card, rank letter, Class 10/12 mark sheets, category certificate (if applicable), ID proof, and passport-sized photographs. A missing document can cause huge problems.
+                </li>
+                <li>
+                    <strong>Strategic Choice Filling & Locking</strong>
+                    This is the most critical step. Don't just fill in colleges based on last year's cutoffs. Prioritize your list based on your personal preference for college reputation, location, and infrastructure. Always have a mix of top-tier, mid-range, and "safe" colleges.
+                </li>
+                 <li>
+                    <strong>The AIQ vs. State Quota Dilemma</strong>
+                    Analyze your All India Rank (AIR) and your State Rank. For top-rankers, AIQ offers access to the best colleges across India. For others, the State Quota can be a golden ticket due to reservation policies and lower competition for a higher number of seats.
+                </li>
+                <li>
+                    <strong>Understanding Seat Allotment Results</strong>
+                    Once results are out, you will have options: 'Accept' the seat and proceed with admission, or 'Upgrade' to a better choice in the next round. Understand the rules for 'Free Exit' vs. 'Forfeiture of Security Deposit'.
+                </li>
+                <li>
+                    <strong>Post-Allotment Formalities</strong>
+                    After securing a seat, you must report to the allotted college within the stipulated time for physical document verification and completion of admission formalities. Don't miss these deadlines!
+                </li>
+            </ul>
+        </section>
+
+        <section id="social">
+            <h2>Connect With Me</h2>
+            <p>For regular updates, tips, and live sessions, follow me on social media.</p>
+            <div class="social-links">
+                <a href="#" target="_blank">YouTube</a>
+                <a href="#" target="_blank">Telegram</a>
+                <a href="#" target="_blank">Instagram</a>
+            </div>
+        </section>
     </div>
-    <p style="text-align:center; margin-top:20px;">Exams Cleared, Subject-wise Marks & Scores Visualized</p>
-</section>
 
-<!-- E-commerce Experience -->
-<section id="ecommerce" class="experience">
-    <h2>E-commerce Experience</h2>
-    <ul class="ecomm-list">
-        <li>Amazon & Flipkart seller account management</li>
-        <li>Product listing & SEO optimization</li>
-        <li>Ad campaigns, analytics & performance tracking</li>
-        <li>Bulk upload & inventory management</li>
-        <li>Customer engagement & review optimization</li>
-    </ul>
-</section>
-
-<!-- Resume / Skills -->
-<section id="resume" class="resume">
-    <h2>Resume & Skills</h2>
-    <ul class="skills-list">
-        <li>SSC & Government Exam Strategies</li>
-        <li>Data Analysis & Performance Charts</li>
-        <li>E-commerce Management & Digital Marketing</li>
-        <li>Project Execution & Optimization</li>
-        <li>Resume Writing & Career Guidance</li>
-    </ul>
-    <a href="Saurabh_Varma_Resume.pdf" class="button" target="_blank">Download Resume</a>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:Sauravvarmag8@gmail.com">Sauravvarmag8@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/saurabh-varma" target="_blank">linkedin.com/in/saurabh-varma</a></p>
-    <p>Instagram: <a href="https://instagram.com" target="_blank">instagram.com</a></p>
-</section>
-
-<footer>
-    &copy; 2025 Saurabh Varma | Portfolio
-</footer>
-
-<!-- Chart.js -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const ctx = document.getElementById('examChart').getContext('2d');
-    const examChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['SSC CGL', 'SSC CHSL', 'Railway', 'Banking', 'Defence'],
-            datasets: [{
-                label: 'Marks Obtained',
-                data: [210, 185, 190, 170, 200], // ← yahan apne marks dal de
-                backgroundColor: 'rgba(26, 115, 232, 0.7)',
-                borderColor: 'rgba(26, 115, 232, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: true,
-            animation: {
-                duration: 2000,
-                easing: 'easeOutBounce'
-            },
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    max: 250
-                }
-            }
-        }
-    });
-</script>
+    <footer>
+        <p>&copy; 2025 Dr. Desie Singh. All Rights Reserved. Guiding the next generation of doctors.</p>
+    </footer>
 
 </body>
 </html>
