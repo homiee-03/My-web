@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | My First Website</title>
+  <style>
+    body { 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      background: #f4f4f9; color: #333; padding: 40px; text-align: center;
+    }
+    img { width: 150px; border-radius: 50%; margin-bottom: 20px; }
+    h1 { font-size: 2.5em; margin-bottom: 0.2em; }
+    p.bio { font-size: 1.2em; margin-bottom: 1.5em; color: #555; }
+    .links a {
+      margin: 0 10px;
+      display: inline-block;
+      padding: 10px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      color: #fff;
+      background: #007BFF;
+      transition: background 0.3s;
+    }
+    .links a:hover { background: #0056b3; }
+  </style>
 </head>
 <body>
-  <h1>Hello World 🚀</h1>
-  <p>Ye mera pehla free domain website hai!</p>
+  <img src="https://avatars.githubusercontent.com/u/XXX?v=4" alt="Tera Naam">
+  <h1>Tera Naam</h1>
+  <p class="bio">Ye mera personal website hai jaha main kuch share karna chahta hoon — projects, ideas, ya fun cheezen.</p>
+  <div class="links">
+    <a href="https://github.com/homiee-03" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/username" target="_blank">LinkedIn</a>
+    <a href="mailto:email@example.com">Contact</a>
+  </div>
 </body>
 </html>
