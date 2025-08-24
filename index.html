@@ -1,121 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SSC & Govt Exams Hub 🚀</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-<style>
-  body { margin:0; font-family:'Poppins', sans-serif; background:#f5f7fa; color:#333;}
-  a{text-decoration:none; color:inherit;}
-
-  /* ===== Hero Section ===== */
-  .hero{
-    background: linear-gradient(135deg, #1abc9c, #3498db);
-    color:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center;
-    height:60vh; text-align:center; padding:0 20px;
-  }
-  .hero h1{font-size:2.2rem; margin:0.3rem 0; opacity:0; animation:fadeIn 1.5s forwards;}
-  .typing{border-right:3px solid #fff; white-space:nowrap; overflow:hidden; font-size:1rem; width:0;
-          animation:typing 2.5s steps(30) forwards, blink 0.7s infinite step-end alternate;}
-  @keyframes fadeIn{to{opacity:1;}}
-  @keyframes typing{to{width:100%;}}
-  @keyframes blink{50%{border-color:transparent;}}
-
-  /* ===== Section Styles ===== */
-  section{padding:50px 20px; max-width:1000px; margin:auto;}
-  h2.section-title{text-align:center; font-size:2rem; margin-bottom:40px; color:#1abc9c;}
-  
-  /* ===== Flip Card Styles ===== */
-  .cards{display:flex; flex-wrap:wrap; gap:20px; justify-content:center;}
-  .card{
-    background:#fff; width:250px; height:180px; perspective:1000px; cursor:pointer;
-  }
-  .card-inner{
-    position:relative; width:100%; height:100%; text-align:center;
-    transition: transform 0.6s; transform-style: preserve-3d;
-  }
-  .card:hover .card-inner{transform:rotateY(180deg);}
-  .card-front, .card-back{
-    position:absolute; width:100%; height:100%; backface-visibility:hidden;
-    border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.1); display:flex; justify-content:center; align-items:center; flex-direction:column; padding:15px;
-  }
-  .card-front{background:#3498db; color:#fff;}
-  .card-back{background:#ecf0f1; color:#333; transform:rotateY(180deg); font-size:0.9rem;}
-
-  /* ===== Footer ===== */
-  footer{background:#2c3e50; color:#fff; text-align:center; padding:30px 20px;}
-  footer a{color:#1abc9c; margin:0 10px;}
-
-  /* ===== Responsive ===== */
-  @media(max-width:768px){.hero h1{font-size:1.8rem;}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh Varma Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #1a73e8;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1a73e8;
+        }
+        .about, .experience, .resume, .contact {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .chart-container {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+        }
+        .skills-list, .ecomm-list {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        a.button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #1a73e8;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
 
-<!-- Hero -->
-<div class="hero">
-  <h1>SSC & Govt Exams Made Easy</h1>
-  <div class="typing">Crack SSC, Banking, UPSC & Railways 🚀</div>
-</div>
+<!-- Header / Hero -->
+<header>
+    <h1>Saurabh Varma</h1>
+    <p>SSC & Govt Job Aspirant | E-commerce Expert</p>
+    <a href="#resume" class="button">View Resume</a>
+</header>
 
-<!-- Exams Section -->
-<section>
-  <h2 class="section-title">Popular Exams</h2>
-  <div class="cards">
-    <!-- SSC Card -->
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front"><h3>SSC CGL</h3></div>
-        <div class="card-back">
-          <p>Staff Selection Commission Combined Graduate Level Exam.</p>
-          <p>Eligibility: Graduate | Apply Link: <a href="https://ssc.nic.in" target="_blank">SSC Official</a></p>
-        </div>
-      </div>
-    </div>
-    <!-- Banking Card -->
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front"><h3>Banking</h3></div>
-        <div class="card-back">
-          <p>IBPS, SBI exams for Clerk, PO & Specialist posts.</p>
-          <p>Eligibility: Graduate | <a href="https://www.ibps.in/" target="_blank">Apply</a></p>
-        </div>
-      </div>
-    </div>
-    <!-- UPSC Card -->
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front"><h3>UPSC</h3></div>
-        <div class="card-back">
-          <p>Union Civil Services exams for administrative posts.</p>
-          <p>Eligibility: Graduate | <a href="https://www.upsc.gov.in/" target="_blank">Apply</a></p>
-        </div>
-      </div>
-    </div>
-    <!-- Railways Card -->
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front"><h3>Railways</h3></div>
-        <div class="card-back">
-          <p>RRB exams for various posts in Indian Railways.</p>
-          <p>Eligibility & Apply: <a href="https://indianrailways.gov.in/" target="_blank">Official</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- About Me -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hi! I am Saurabh Varma, a dedicated SSC & Government job aspirant with strong experience in e-commerce management. Skilled in Amazon & Flipkart seller account handling, SEO optimization, and strategic project execution. I have cleared multiple government exams and continue to pursue excellence in competitive fields.</p>
 </section>
 
-<!-- Footer -->
+<!-- SSC / Govt Exam Section -->
+<section id="ssc" class="experience">
+    <h2>SSC & Govt Exam Performance</h2>
+    <div class="chart-container">
+        <canvas id="examChart"></canvas>
+    </div>
+    <p style="text-align:center; margin-top:20px;">Exams Cleared, Subject-wise Marks & Scores Visualized</p>
+</section>
+
+<!-- E-commerce Experience -->
+<section id="ecommerce" class="experience">
+    <h2>E-commerce Experience</h2>
+    <ul class="ecomm-list">
+        <li>Amazon & Flipkart seller account management</li>
+        <li>Product listing & SEO optimization</li>
+        <li>Ad campaigns, analytics & performance tracking</li>
+        <li>Bulk upload & inventory management</li>
+        <li>Customer engagement & review optimization</li>
+    </ul>
+</section>
+
+<!-- Resume / Skills -->
+<section id="resume" class="resume">
+    <h2>Resume & Skills</h2>
+    <ul class="skills-list">
+        <li>SSC & Government Exam Strategies</li>
+        <li>Data Analysis & Performance Charts</li>
+        <li>E-commerce Management & Digital Marketing</li>
+        <li>Project Execution & Optimization</li>
+        <li>Resume Writing & Career Guidance</li>
+    </ul>
+    <a href="Saurabh_Varma_Resume.pdf" class="button" target="_blank">Download Resume</a>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:Sauravvarmag8@gmail.com">Sauravvarmag8@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/saurabh-varma" target="_blank">linkedin.com/in/saurabh-varma</a></p>
+    <p>Instagram: <a href="https://instagram.com" target="_blank">instagram.com</a></p>
+</section>
+
 <footer>
-  <p>Connect with me: 
-    <a href="https://www.instagram.com/saurabh_tritiya/" target="_blank">Instagram</a> | 
-    <a href="https://www.facebook.com/profile.php?id=61553747990633" target="_blank">Facebook</a> | 
-    <a href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav" target="_blank">LinkedIn</a> | 
-    <a href="mailto:sauravvarmag8@gmail.com">Gmail</a>
-  </p>
-  <p>© 2025 SSC & Govt Exams Hub</p>
+    &copy; 2025 Saurabh Varma | Portfolio
 </footer>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('examChart').getContext('2d');
+    const examChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['SSC CGL', 'SSC CHSL', 'Railway', 'Banking', 'Defence'],
+            datasets: [{
+                label: 'Marks Obtained',
+                data: [210, 185, 190, 170, 200], // ← yahan apne marks dal de
+                backgroundColor: 'rgba(26, 115, 232, 0.7)',
+                borderColor: 'rgba(26, 115, 232, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            animation: {
+                duration: 2000,
+                easing: 'easeOutBounce'
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 250
+                }
+            }
+        }
+    });
+</script>
 
 </body>
 </html>
